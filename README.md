@@ -1,27 +1,19 @@
-# ShoppingCartProject
+# Shopping Cart Project 🛒
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Este projeto é uma aplicação web simples construída com **Angular** que permite aos usuários criar uma lista de compras. Os usuários podem adicionar, editar, remover e marcar itens como comprados ou não comprados, com uma interface simples e intuitiva.
 
-## Development server
+## Funcionalidades ✨
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Adicionar Itens**: Adicione novos itens à lista de compras através de um campo de entrada.
+- **Marcar como Comprado**: Marque os itens como comprados e os mova para uma seção separada.
+- **Editar Itens**: Edite o nome dos itens diretamente na lista.
+- **Remover Itens**: Exclua itens da lista com um clique.
+- **Agrupamento por Status**: Os itens são agrupados em "Comprados" e "Não Comprados".
+- **Interface Responsiva**: A interface se adapta para ser visualizada em dispositivos móveis, tablets e desktops.
 
-## Code scaffolding
+## Tecnologias Utilizadas 💻
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Angular**: Framework principal utilizado para a construção do frontend.
+- **TypeScript**: Linguagem de programação usada para tipagem estática e desenvolvimento mais robusto.
+- **CSS**: Para a estilização da interface.
+- **HTML**: Para estruturar o conteúdo da aplicação.
