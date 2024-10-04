@@ -1,4 +1,3 @@
-/* Estilos gerais para o layout da lista */
 .item-list {
     display: flex;
     flex-direction: row;
@@ -9,7 +8,7 @@
     margin-top: 2rem;
 }
 
-/* Estilo para o nome do item */
+
 .item-name span {
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -18,7 +17,7 @@
     color: #333;
 }
 
-/* Estilo para o campo de input no modo de edição */
+
 .item-name input {
     height: 2.5rem;
     padding: 0.5rem;
@@ -29,7 +28,7 @@
     font-size: 1rem;
 }
 
-/* Estilo para a caixa do produto */
+
 .product-list {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -48,14 +47,14 @@
     transform: translateY(-2px);
 }
 
-/* Estilo para o nome do produto */
+
 .product-list .item-name span {
     margin-top: 0.25rem;
     text-align: center;
     color: #555;
 }
 
-/* Estilo para os botões */
+
 .product-list button {
     margin-top: 0.75rem;
     padding: 0.5rem 1rem;
@@ -66,7 +65,7 @@
     transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
-/* Estilo para a bolinha que marca tarefa concluída */
+
 .product-list .finished-task {
     display: flex;
     justify-content: center;
@@ -85,7 +84,7 @@
     filter: brightness(0.8);
 }
 
-/* Botão de edição */
+
 .edit-button {
     background-color: #ff9800;
     color: white;
@@ -97,7 +96,7 @@
     filter: brightness(0.9);
 }
 
-/* Botão de exclusão */
+
 .delete-button {
     background-color: #f44336;
     color: white;
@@ -109,7 +108,7 @@
     filter: brightness(0.9);
 }
 
-/* Botão de cancelar */
+
 .cancel-button {
     background-color: #ffeb3b;
     color: #333;
@@ -121,7 +120,7 @@
     filter: brightness(0.9);
 }
 
-/* Botão de salvar */
+
 .save-button {
     background-color: #4caf50;
     color: white;
