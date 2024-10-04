@@ -1,8 +1,28 @@
 <div class="item-list">
-    <div *ngFor="let item of items">
-      <span [class.bought]="item.isBought" >{{ item.productName }}</span>
-      <button (click)="toggleBought(item)">Marcar como Comprado</button>
-      <button (click)="removeItem(item)">Excluir</button>
-    </div>
+  <div *ngFor="let item of items">
+    
+    <button (click)="toggleBought(item)">
+      <i class="fas fa-check"></i>
+    </button>
+
+    
+    <span *ngIf="!item.isEditing">{{ item.productName }}</span>
+    <input *ngIf="item.isEditing" [(ngModel)]="item.productName" />
+    
+    <button *ngIf="!item.isEditing" (click)="editItem(item)">
+      <i class="fas fa-edit"></i> Editar
+    </button>
+
+    
+    <button *ngIf="item.isEditing" (click)="saveItem(item)">
+      <i class="fas fa-save"></i> Salvar
+    </button>
+    <button *ngIf="item.isEditing" (click)="cancelEdit(item)">
+      <i class="fas fa-times"></i> Cancelar
+    </button>
+
+    <button (click)="removeItem(item)">
+      <i class="fas fa-trash"></i> Remover
+    </button>
   </div>
-  
+</div>

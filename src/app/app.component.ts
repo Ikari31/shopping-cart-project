@@ -21,7 +21,8 @@ export class AppComponent {
     const product = {
       id: this.items.length + 1,
       productName: newItem,
-      isBought: false
+      isBought: false,
+      isEditing: false
     }
 
     this.items.push(product)
@@ -30,4 +31,12 @@ export class AppComponent {
   onRemoveItem(item: Item){
     this.items = this.items.filter(product => product.id !== item.id)
   }
+
+  handleEditItem(updatedItem: Item) {
+    const index = this.items.findIndex(item => item.id === updatedItem.id);
+    if (index !== -1) {
+      this.items[index] = updatedItem; 
+    }
+  }
+
 }

@@ -4,5 +4,9 @@
     <h1>Carrinho de Compras</h1>
   </nav>
   <app-add-item (addItemEvent)="onAddItem($event)"></app-add-item>
-  <app-item-list [items]="items" (removeItemEvent)="onRemoveItem($event)"></app-item-list>
+  
+  <app-item-list [items]="items" 
+                 (removeItemEvent)="onRemoveItem($event)" 
+                 (editItemEvent)="handleEditItem($event)">
+  </app-item-list>
 </div>

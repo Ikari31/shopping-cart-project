@@ -15,7 +15,6 @@ export class AddItemComponent {
   @Output() addItemEvent = new EventEmitter<string>();
   
   addItem() {
-    console.log('Item adicionado:', this.newItem.value);  // Verifique o valor de newItem
     if (this.newItem.valid) {
       this.addItemEvent.emit(this.newItem.value ?? '');
       this.newItem.reset();
