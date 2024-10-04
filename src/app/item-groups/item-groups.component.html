@@ -1,0 +1,26 @@
+<div class="item-groups">
+    
+    <h3>Itens Não Comprados</h3>
+    <ul *ngIf="getUnboughtItems().length > 0">
+      <li *ngFor="let item of getUnboughtItems()">
+        <span>{{ item.productName }}</span>
+        <button (click)="toggleBought(item)">
+          <i class="fas fa-check"></i> Marcar como Comprado
+        </button>
+      </li>
+    </ul>
+    <p *ngIf="getUnboughtItems().length === 0">Nenhum item pendente.</p>
+  
+    
+    <h3>Itens Comprados</h3>
+    <ul *ngIf="getBoughtItems().length > 0">
+      <li *ngFor="let item of getBoughtItems()">
+        <span>{{ item.productName }}</span>
+        <button (click)="toggleBought(item)">
+          <i class="fas fa-undo"></i> Marcar como Não Comprado
+        </button>
+      </li>
+    </ul>
+    <p *ngIf="getBoughtItems().length === 0">Nenhum item comprado.</p>
+  </div>
+  

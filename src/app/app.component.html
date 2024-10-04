@@ -9,4 +9,6 @@
                  (removeItemEvent)="onRemoveItem($event)" 
                  (editItemEvent)="handleEditItem($event)">
   </app-item-list>
+
+  <app-item-list-groups [items]="items" (toggleBoughtEvent)="handleToggleBought($event)"></app-item-list-groups>
 </div>
