@@ -1,0 +1,82 @@
+/* Estilo para o contêiner principal */
+.item-groups {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para os títulos (h3) */
+  .item-groups h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  /* Estilo para as listas de itens */
+  .item-groups ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  /* Estilo para os itens na lista */
+  .item-groups li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o nome do produto */
+  .item-groups li span {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  /* Estilo para os botões */
+  .item-groups button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo do botão para marcar como não comprado */
+  .item-groups button.undo {
+    background-color: #ffc107;
+  }
+  
+  .item-groups button:hover {
+    background-color: #218838;
+  }
+  
+  .item-groups button.undo:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Estilo para as mensagens quando não há itens */
+  .item-groups p {
+    color: #999;
+    font-style: italic;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Estilo adicional para aumentar o espaçamento entre os itens */
+  .item-groups li + li {
+    margin-top: 10px;
+  }
+  

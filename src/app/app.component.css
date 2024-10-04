@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open-sans', sans-serif;
 }
 
 .container {
@@ -17,15 +18,30 @@
     align-items: center;
     gap: 10px;
     justify-content: center;
-    height: 60px; 
+    height: 8.5rem; 
+    border-radius: 5px;
 }
 
 .navbar-section img{
-    height: 3rem;
+    height: 4rem;
     
 }
 
 h1 {
     margin: 0;
     font-size: 2rem;
+}
+
+.add-item-container{
+    margin-top: 3rem;
+}
+
+.item-list-container{
+    margin-top: 3rem;
+}
+
+.item-groups-container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
 }

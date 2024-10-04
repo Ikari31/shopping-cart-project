@@ -3,12 +3,21 @@
     <img src="https://cdn-icons-png.flaticon.com/512/8539/8539117.png" alt="shopping-cart">
     <h1>Carrinho de Compras</h1>
   </nav>
-  <app-add-item (addItemEvent)="onAddItem($event)"></app-add-item>
+  <div class="add-item-container">
+    <app-add-item (addItemEvent)="onAddItem($event)"></app-add-item>
+  </div>
   
-  <app-item-list [items]="items" 
-                 (removeItemEvent)="onRemoveItem($event)" 
-                 (editItemEvent)="handleEditItem($event)">
-  </app-item-list>
+  <div class="item-list-container">
 
-  <app-item-list-groups [items]="items" (toggleBoughtEvent)="handleToggleBought($event)"></app-item-list-groups>
+    <app-item-list [items]="items" 
+                   (removeItemEvent)="onRemoveItem($event)" 
+                   (editItemEvent)="handleEditItem($event)">
+    </app-item-list>
+  </div>
+
+  <div class="item-groups-container">
+    <app-item-list-groups [items]="items" 
+                          (toggleBoughtEvent)="handleToggleBought($event)">
+    </app-item-list-groups>
+  </div>
 </div>

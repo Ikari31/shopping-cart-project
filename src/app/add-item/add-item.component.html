@@ -1,10 +1,13 @@
 <div class="add-item">
-    <input type="text" [formControl]="newItem" placeholder="Digite um item...">
-    <button (click)="addItem()">
-        <i class="fas fa-plus"></i>
-    </button>
+    <h3>Cadastre um produto abaixo: </h3>
+    <div class="form-product">
+        <input type="text" [formControl]="newItem" placeholder="Digite um item...">
+        <button (click)="addItem()">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
 
-    <div *ngIf="newItem.invalid && newItem.touched">
+    <div class="validation-error" *ngIf="newItem.invalid && newItem.touched">
         O nome do produto é obrigatório
     </div>
 </div>
