@@ -1,6 +1,6 @@
 # Shopping List Project 🛒
 
-Este projeto é uma aplicação web simples construída com **Angular** que permite aos usuários criar uma lista de compras. Os usuários podem adicionar, editar, remover e marcar itens como comprados ou não comprados, com uma interface simples e intuitiva.
+Este projeto é uma aplicação web simples construída com **Angular** que permite aos usuários criar uma lista de compras. Os usuários podem adicionar, editar, remover e marcar itens como comprados ou não comprados, com uma interface simples e minimalista.
 
 ## Funcionalidades ✨
 
