@@ -1,0 +1,8 @@
+<div class="add-item">
+    <input type="text" [formControl]="newItem" placeholder="Digite um item...">
+    <button (click)="addItem()">Adicionar Item</button>
+
+    <div *ngIf="newItem.invalid && newItem.touched">
+        O nome do produto é obrigatório
+    </div>
+</div>
